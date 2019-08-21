@@ -3,24 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AdminBodyComponent } from './theme/admin/body/body.component';
-import { HeaderComponent } from './theme/admin/header/header.component';
-import { FooterComponent } from './theme/admin/footer/footer.component';
-import { IndexComponent } from './pages/index/index.component';
-import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
+import { ThemeRoutingModule } from '../app/theme/theme-routing.module';
+import { ThemeModule } from '../app/theme/theme.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    AdminBodyComponent,
-    HeaderComponent,
-    FooterComponent,
-    IndexComponent,
-    DashboardComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ThemeRoutingModule,
+    ThemeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

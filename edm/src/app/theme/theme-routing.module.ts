@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ClientBodyComponent } from './client/body/body.component';
 import { AdminBodyComponent } from './admin/body/body.component';
+import { IndexComponent } from '../pages/index/index.component';
+import { DashboardComponent } from '../pages/admin/dashboard/dashboard.component';
 
 const routes: Routes = [
     {
@@ -9,8 +11,8 @@ const routes: Routes = [
         "component": ClientBodyComponent,
         "children": [
             {
-                "path": "home",
-                "loadChildren": "..\/pages\/index\/index.module#IndexModule"
+                path: "home",
+                component: IndexComponent
             }]
     },
     {
@@ -19,7 +21,7 @@ const routes: Routes = [
         "children": [
             {
                 "path": "dashboard",
-                "loadChildren": "..\/pages\/index\/index.module#IndexModule"
+                component: DashboardComponent
             }]
     }
 ];
