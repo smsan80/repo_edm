@@ -9,11 +9,17 @@ import { ThemeModule } from './theme.module';
 const routes: Routes = [
     {
         path: "",
-        component: ClientBodyComponent
+        component: ClientBodyComponent,
+        children: [
+            { path: 'home', component: IndexComponent }
+        ]
     },
     {
         path: "admin",
-        component: AdminBodyComponent
+        component: AdminBodyComponent,
+        children: [
+            { path: 'dashboard', component: DashboardComponent }
+        ]
     }
 ];
 
