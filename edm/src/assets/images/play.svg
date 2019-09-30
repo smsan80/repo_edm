@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.29" y1="1.103" x2="0.792" y2="0.073" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00e5ff"/>
+      <stop offset="1" stop-color="#ccff90"/>
+    </linearGradient>
+    <clipPath id="clip-PLAY">
+      <rect width="56" height="56"/>
+    </clipPath>
+  </defs>
+  <g id="PLAY" clip-path="url(#clip-PLAY)">
+    <rect width="56" height="56" fill="#fff"/>
+    <g id="Group_27" data-name="Group 27" transform="translate(2394 985)">
+      <g id="Group_8" data-name="Group 8" transform="translate(-2394 -985)">
+        <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="26.191" cy="26.191" rx="26.191" ry="26.191" transform="translate(1.453 0.415)" fill="url(#linear-gradient)"/>
+        <g id="pause-round-button" transform="translate(0 0)">
+          <path id="Path_2041" data-name="Path 2041" d="M27.549,0A27.548,27.548,0,1,0,55.1,27.548,27.58,27.58,0,0,0,27.549,0Zm0,51.983A24.434,24.434,0,1,1,51.983,27.548,24.462,24.462,0,0,1,27.549,51.983Z" fill="#fff"/>
+          <path id="Path_2042" data-name="Path 2042" d="M87.36,81.653,71.152,71.039a2.324,2.324,0,0,0-1.268-.4,2.05,2.05,0,0,0-2.011,2.171V94.236a2.049,2.049,0,0,0,2.011,2.171h0a2.323,2.323,0,0,0,1.268-.4L87.361,85.4a2.179,2.179,0,0,0,0-3.742ZM70.987,92.394V74.654l13.547,8.871Z" transform="translate(-47.347 -55.975)" fill="#000002"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

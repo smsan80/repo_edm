@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.29" y1="1.103" x2="0.792" y2="0.073" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00e5ff"/>
+      <stop offset="1" stop-color="#ccff90"/>
+    </linearGradient>
+    <clipPath id="clip-PAUSE">
+      <rect width="56" height="56"/>
+    </clipPath>
+  </defs>
+  <g id="PAUSE" clip-path="url(#clip-PAUSE)">
+    <rect width="56" height="56" fill="#fff"/>
+    <g id="Group_27" data-name="Group 27" transform="translate(2394 985)">
+      <g id="Group_8" data-name="Group 8" transform="translate(-2394 -985)">
+        <ellipse id="Ellipse_6" data-name="Ellipse 6" cx="26.191" cy="26.191" rx="26.191" ry="26.191" transform="translate(1.453 0.415)" fill="url(#linear-gradient)"/>
+        <g id="pause-round-button" transform="translate(0 0)">
+          <path id="Path_2041" data-name="Path 2041" d="M27.549,0A27.548,27.548,0,1,0,55.1,27.548,27.58,27.58,0,0,0,27.549,0Zm0,51.983A24.434,24.434,0,1,1,51.983,27.548,24.462,24.462,0,0,1,27.549,51.983Z" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_26" data-name="Group 26" transform="translate(2468 -78)">
+      <g id="Group_9" data-name="Group 9" transform="translate(-2249.736 -1181.736)">
+        <ellipse id="Ellipse_6-2" data-name="Ellipse 6" cx="30.944" cy="30.944" rx="30.944" ry="30.944" transform="translate(212.453 1183.227)" fill="url(#linear-gradient)"/>
+        <g id="pause-round-button-2" data-name="pause-round-button" transform="translate(210.736 1182.736)">
+          <path id="Path_2041-2" data-name="Path 2041" d="M32.549,0A32.548,32.548,0,1,0,65.1,32.548,32.586,32.586,0,0,0,32.549,0Zm0,61.418A28.869,28.869,0,1,1,61.418,32.548,28.9,28.9,0,0,1,32.549,61.418Z" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_10" data-name="Group 10" transform="translate(-2123.938 -52.599)">
+        <path id="Path_2043" data-name="Path 2043" d="M180.184,68.6c-1.8,0-3.268.925-3.268,2.066v31.186c0,1.141,1.463,2.066,3.268,2.066s3.268-.925,3.268-2.066V70.665C183.452,69.524,181.989,68.6,180.184,68.6Z" transform="translate(-54.28)" fill="#000002"/>
+        <path id="Path_2044" data-name="Path 2044" d="M180.354,68.6c-1.9,0-3.437.925-3.437,2.066v31.186c0,1.141,1.539,2.066,3.438,2.066s3.438-.925,3.438-2.066V70.665C183.791,69.524,182.252,68.6,180.354,68.6Z" transform="translate(-70.978)" fill="#000002"/>
+      </g>
+      <g id="Group_28" data-name="Group 28" transform="translate(-2555.28 23.441)">
+        <path id="Path_2043-2" data-name="Path 2043" d="M179.436,68.6c-1.392,0-2.52.713-2.52,1.593V94.244c0,.88,1.128,1.593,2.52,1.593s2.52-.713,2.52-1.593V70.192C181.957,69.312,180.828,68.6,179.436,68.6Z" transform="translate(-58.1)" fill="#000002"/>
+        <path id="Path_2044-2" data-name="Path 2044" d="M179.567,68.6c-1.464,0-2.651.713-2.651,1.593V94.244c0,.88,1.187,1.593,2.651,1.593s2.651-.713,2.651-1.593V70.192C182.218,69.312,181.032,68.6,179.567,68.6Z" transform="translate(-70.978)" fill="#000002"/>
+      </g>
+    </g>
+  </g>
+</svg>
