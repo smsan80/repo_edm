@@ -13,27 +13,50 @@
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
 }
+a:hover {
+    color: inherit;
+}
 dl, ol, ul {
     margin: 0;
     padding: 0;
 }
-::-moz-selection {
-    background: #f6e6ff;
-    color: #333;
+::-webkit-scrollbar {
+    width: 8px;
 }
-::selection {
-    background: #f6e6ff;
-    color: #333;
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+::-webkit-scrollbar-thumb {
+    background: #CCFF90;
+    background: -moz-linear-gradient(273deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,229,255,1)), color-stop(70%, rgba(204,255,144,1)), color-stop(100%, rgba(204,255,144,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(273deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(273deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(273deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%); /* ie10+ */
+    background: linear-gradient(177deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00E5FF', endColorstr='#CCFF90',GradientType=0 ); /* ie6-9 */
+
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #CCFF90;
+    background: -moz-linear-gradient(273deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0,229,255,1)), color-stop(70%, rgba(204,255,144,1)), color-stop(100%, rgba(204,255,144,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(273deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(273deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(273deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%); /* ie10+ */
+    background: linear-gradient(177deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00E5FF', endColorstr='#CCFF90',GradientType=0 ); /* ie6-9 */
+
 }
 /* Global styles */
 
 /* Header styles */
 body {
-    background: black !important;
+    background: url("../images/global_bg.jpg");
+    background-size: cover;
 }
 .header {
     width: 100%;
-    background: black;
     color: white;
     padding: 61px 75px;
 }
@@ -101,7 +124,7 @@ body {
     padding-top: 55px;
     left: 0;
     width: 403px;
-    box-shadow: 0 0 41px black;
+    /* box-shadow: 0 0 41px black; */
     border-radius: 13px;
     z-index: 1;
     display: none;
@@ -187,13 +210,13 @@ body {
     transform: rotate(180deg);
 }
 .home_banner {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
 }
 /* Banner styles */
 
 /* Featured Track style */
 .featured_track_section {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
     color: white;
 }
 .bold_heading {
@@ -241,6 +264,7 @@ body {
     padding: 53px 0 0 0;
     max-width: 93%;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 .track_box {
     width: 20%;
@@ -330,16 +354,101 @@ body {
     font-size: 12px;
     padding: 0px 1px;
 }
-.track_thumbnail_image:hover .track_thumbnail {
-    webkit-filter: blur(2px);
+.track_thumbnailtrack_box_image:hover .track_thumbnail {
+    -webkit-filter: blur(2px);
     filter: blur(2px);
 }
 .track_thumbnail_image:hover .track_hover_section {
     display: block;
 }
-.track_discription:hover, .track_discription:hover .add_to_card_track {
-    color: #CCFF90;
+.track_box:hover, .track_box:hover .add_to_card_track {
     border-color: #CCFF90;
+}
+.btn_section {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.default_btn {
+    background: #CCFF90;
+    background: -moz-linear-gradient(359deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0,229,255,1)), color-stop(70%, rgba(204,255,144,1)), color-stop(100%, rgba(204,255,144,1)));
+    background: -webkit-linear-gradient(359deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    background: -o-linear-gradient(359deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    background: -ms-linear-gradient(359deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    background: linear-gradient(91deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00E5FF', endColorstr='#CCFF90',GradientType=1 );
+    width: auto;
+    display: inline-block;
+    color: black;
+    padding: 10px 30px;
+    font-size: 28px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+.default_btn > span {
+    display: inline-block;
+}
+.btn_icon img {
+    width: 30px;
+    margin: 0 0 0 15px;
 }
 /* Featured Track style */
 
+/* Company Works Style */
+.companys_work_section {
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logo_designing_section {
+    display: inline-block;
+    width: 38%;
+    vertical-align: top;
+}
+.work_list {
+    position: relative;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.work_list > img {
+    width: 100%;
+    border-radius: 20px;
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+.development_section {
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+    padding: 0 2.5%;
+}
+.development_section .work_list:first-child {
+    margin-bottom: 8%;
+}
+.artist_illustration_section {
+    display: inline-block;
+    vertical-align: top;
+    width: 22%;
+}
+.work_name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.1);
+    display: table;
+    vertical-align: middle;    
+    border-radius: 20px;
+}
+.work_name p {
+    margin: 0;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 24px;
+    padding: 0 15px;
+}
+/* Company Works Style */
