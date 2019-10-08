@@ -8,7 +8,7 @@ import { ThemeModule } from './theme/theme.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
