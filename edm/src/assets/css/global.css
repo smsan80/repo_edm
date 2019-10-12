@@ -477,3 +477,110 @@ body {
     font-family: arial;
 }
 /* Company Works Style */
+
+/*  */
+.shop_track_section {
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+.shop_track_thumbnail {
+    width: 37%;
+    display: inline-block;
+    vertical-align: top;
+}
+.track_thumbnail_img {
+    width: 100%;
+    border-radius: 35px;
+}
+.shop_track_detail {
+    width: 63%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5%;
+}
+.shop_track_name {
+    margin: 0;
+    font-size: 62px;
+    font-weight: normal;
+    padding-bottom: 35px;
+}
+.track_disc {
+    color: #CCFF90;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.track_disc *, .track_mini_disc *, .details_track_price * {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+.details_track_divider {
+    width: 1px;
+    height: 31px;
+    background: #CCFF90;
+    display: inline-block;
+    margin: 0 10px !important;
+}
+.track_mini_disc {
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+.price_section {
+    color: #CCFF90;
+    font-size: 27px;
+    font-weight: bold;
+}
+.small_default_btn {
+    background: #CCFF90;
+    background: -moz-linear-gradient(359deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0,229,255,1)), color-stop(70%, rgba(204,255,144,1)), color-stop(100%, rgba(204,255,144,1)));
+    background: -webkit-linear-gradient(359deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    background: -o-linear-gradient(359deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    background: -ms-linear-gradient(359deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    background: linear-gradient(91deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00E5FF', endColorstr='#CCFF90',GradientType=1 );
+    width: auto;
+    display: inline-block;
+    color: black;
+    padding: 6px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0 0 0 40px;
+}
+.track_left_secction {
+    display: inline-block;
+    width: 69%;
+    vertical-align: top;
+    padding-right: 15px;
+}
+.track_right_section {
+    display: inline-block;
+    width: 31%;
+    vertical-align: top;
+    position: relative;
+    padding-left: 35px;
+}
+.track_right_section::before {
+    content: "";
+    height: 100%;
+    width: 4px;
+    position: absolute;
+    left: 2px;
+    background: #CCFF90;
+    background: -moz-linear-gradient(359deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0,229,255,1)), color-stop(70%, rgba(204,255,144,1)), color-stop(100%, rgba(204,255,144,1)));
+    background: -webkit-linear-gradient(359deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    background: -o-linear-gradient(359deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    background: -ms-linear-gradient(359deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    background: linear-gradient(91deg, rgba(0,229,255,1) 0%, rgba(204,255,144,1) 70%, rgba(204,255,144,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00E5FF', endColorstr='#CCFF90',GradientType=1 );
+}
+.track_extra_details {
+    font-size: 16px;
+    margin: 0 0 45px 0;
+}
