@@ -20,6 +20,7 @@
 
   <!-- Added by Pallavi -->
   <link href="assets/css/global.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/responsive.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -43,9 +44,20 @@
 
   <script src="assets/adminAssets/assets/js/app.js"></script>
   <script src="assets/adminAssets/js/demo_pages/dashboard.js"></script>
+
+  <script>
+    function WhichSide(){
+      if(window.location.pathname == '/admin'){
+        $("body").addClass("admin_side");
+      }else {
+        $("body").addClass("user_side");
+      }
+    }
+  </script>
+
 </head>
 
-<body>
+<body onload="WhichSide()">
   <app-root></app-root>
 </body>
 

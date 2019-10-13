@@ -14,11 +14,11 @@
 /* Font Style */
 
 /* Global style */
-*, *:hover {
+.user_side * {
     padding: 0;
     margin: 0;
     border: 0;
-    outline: none;
+    outline: none !important;
     list-style: none;
     box-sizing: border-box;
     line-height: normal;
@@ -28,7 +28,15 @@
     -moz-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
 }
-dl, ol, ul {
+.user_side *:hover {
+    outline: none;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+.user_side dl, .user_side ol, .user_side ul {
     margin: 0;
     padding: 0;
 }
@@ -63,7 +71,7 @@ dl, ol, ul {
 /* Global style */
 
 /* Header style */
-body {
+body.user_side {
     background: url("../images/global_bg.jpg");
     background-size: cover;
 }
@@ -478,7 +486,7 @@ body {
 }
 /* Company Works Style */
 
-/*  */
+/* Shop Featured Track Details Style */
 .shop_track_section {
     margin-bottom: 40px;
     max-width: 1200px;
@@ -584,3 +592,4 @@ body {
     font-size: 16px;
     margin: 0 0 45px 0;
 }
+/* Shop Featured Track Details Style */
