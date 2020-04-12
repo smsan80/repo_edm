@@ -203,7 +203,7 @@ label.checkbox, label.radio {
     -moz-appearance: none;
     appearance: none
 }
-select::-ms-expand {
+select::-ms-expand, input::-ms-clear, input::-ms-reveal {
     display: none;
 }
 .icon_form_group {
