@@ -56,6 +56,12 @@ a, a:hover {
     color: #05C38F !important;
     cursor: pointer;
 }
+.no_margin {
+    margin: 0 !important;
+}
+.no_padding {
+    padding: 0 !important;
+}
 /* Error msg */
 .error_msg {
     color: red;
@@ -136,12 +142,24 @@ label.checkbox, label.radio {
     margin-right: 15px;
     margin-bottom: 5px;
 }
-/* Globall buttons */
+/* Global buttons */
 .global_btn {
     padding: 8px 20px;
     font-size: 13px;
     margin: 0 1% 5px 0;
     border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    text-align: center;
+    box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.19);
+    -webkit-box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.19);
+}
+.global_circle_btn {
+    padding: 8px 20px;
+    font-size: 13px;
+    margin: 0 1% 5px 0;
+    border-radius: 30px;
     display: inline-block;
     cursor: pointer;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
@@ -156,13 +174,13 @@ label.checkbox, label.radio {
     margin-left: 5px;
     float: right;
 }
-.global_btn span {
+.global_btn span, .global_circle_btn span {
     vertical-align: middle;
 }
 .icon_btn {
     text-align: left;
 }
-.button_group .global_btn:last-child {
+.button_group .global_btn:last-child, .button_group .global_circle_btn:last-child {
     margin-right: 0;
 }
 .primary_btn {
