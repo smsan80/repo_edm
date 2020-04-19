@@ -43,6 +43,24 @@ html {
   scroll-behavior: smooth;
 }
 /* globally CSS assigned */
+app-header, app-body, app-footer {
+    display: inline-block;
+    width: 100%;
+}
+app-header {
+    padding: 35px;
+    border-bottom: 1px solid #E4E4E4;
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+app-body {
+    margin-top: 116px;
+    min-height: calc(100vh - 600px);
+}
 *, p, h1, h2, h3, h4, h5, h6, a {
     margin: 0;
     padding: 0;
@@ -273,4 +291,16 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
 }
 .edm_body {
     padding-top: 116px;
+}
+
+ /* ********** Responsive ********** */
+
+@media screen and (max-width: 800px) {
+    app-header {
+        padding: 15px;
+    }
+    app-body {
+        margin-top: 68px;
+        min-height: auto;
+    }
 }

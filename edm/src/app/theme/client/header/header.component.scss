@@ -1,17 +1,7 @@
-.header {
-    padding: 35px;
-    border-bottom: 1px solid #E4E4E4;
-    background: white;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
 .project_logo {
     float: left;
     vertical-align: middle;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 .project_logo img {
     cursor: pointer;
@@ -20,7 +10,7 @@
 }
 .project_menu {
     float: right;
-    max-width: calc(100% - 250px);
+    max-width: calc(100% - 230px);
     width: auto;
 }
 .menu_list p {
@@ -31,12 +21,15 @@
     padding: 10px 10px;
     cursor: pointer;
 }
-.menu_list, .cart_section, .signin_btn {
+.menu_list, .cart_section, .signin_btn, .user_profile {
     display: inline-block;
     width: auto;
     vertical-align: middle;
 }
-.cart_section, .signin_btn {
+.signin_btn {
+    padding: 0 0 0 10px;
+}
+.cart_section, .user_profile {
     padding: 0 10px;
 }
 .cart_area {
@@ -72,7 +65,7 @@
     display: none;
 }
 .open_mobile_menu {
-    padding: 8px 10px;
+    padding: 5px 10px;
     cursor: pointer;
 }
 .mobile_menu {
@@ -147,15 +140,54 @@
         transform: translate3d(0, 0, 0);
     }
 }
-  
-
+.menu_close_animation {
+    -webkit-animation-name: animateright;
+    animation-name: animateright;
+    animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+@-webkit-keyframes animateright {
+    from {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+@keyframes animateright {
+    from {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+.user_profile_img {
+    background: #556080 url("../../../../assets/images/user_profile.svg");
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+    background-position: center;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 2px solid #556080;
+    cursor: pointer;
+}
+.user_profile_img img {
+    width: 100%;
+    height: 100%;
+}
 // ********** Responsive **********
 
 @media screen and (max-width: 800px) {
-    .menu_list, .project_logo {
+    .menu_list, .project_logo, .signin_btn {
         display: none;
     }
-    .header {
+    app-header {
         padding: 15px;
     }
     .mobile_menu_panel {
