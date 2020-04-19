@@ -3,26 +3,31 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { ThemeRoutingModule } from './theme/theme-routing.module';
 import { ThemeModule } from './theme/theme.module';
-import { LoginComponent } from './auth/login/login.component';
-import { SignupComponent } from './auth/signup/signup.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ApiService } from './_appService/api.service';
+import { CommonService } from './_appService/common.service';
+import { AppSessionService } from './_appService/appsession.service';
+import { BaseServiceHelper } from './_appService/baseHelper.service';
+import { EncryptedStorage } from './_appModel/encryptedstorage';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    LoginComponent,
-    SignupComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
-    ThemeRoutingModule,
     ThemeModule,
   ],
-  providers: [],
+  providers: [
+    ApiService,
+    CommonService,
+    AppSessionService,
+    BaseServiceHelper,
+    EncryptedStorage,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

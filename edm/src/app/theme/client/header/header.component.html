@@ -5,8 +5,8 @@
         </div>
         <div class="mobile_menu menu_open_animation">
             <div class="mobile_project_logo">
-                <a href="#">
-                    <img src="../../../../assets/images/logo.PNG" alt="EDM Logo"/>
+                <a (click)="redirectUrl('home')" >
+                    <img src="../../../../assets/images/logo.PNG" alt="EDM Logo" />
                 </a>
             </div>
             <div class="mobile_menu_list">
@@ -26,8 +26,8 @@
         </div>
     </div>
     <div class="project_logo">
-        <a href="#">
-            <img src="../../../../assets/images/logo.PNG" alt="EDM Logo"/>
+        <a (click)="redirectUrl('home')">
+            <img src="../../../../assets/images/logo.PNG" alt="EDM Logo" />
         </a>
     </div>
     <div class="project_menu">
@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="signin_btn">
-            <a class="global_circle_btn primary_btn no_margin">
+            <a (click)="redirectUrl('login')" class="global_circle_btn primary_btn no_margin">
                 <span>SIGN IN</span>
             </a>
         </div>

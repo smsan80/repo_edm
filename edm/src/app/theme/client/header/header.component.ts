@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BaseServiceHelper } from 'src/app/_appService/baseHelper.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _base: BaseServiceHelper) { }
 
   ngOnInit(): void {
   }
-
+  redirectUrl(url) {
+    this._base._commonService.navigation(url);
+  }
 }
