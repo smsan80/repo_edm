@@ -8,6 +8,8 @@ import {
     SWIPER_CONFIG
 } from 'ngx-swiper-wrapper';
 import { BrowserModule } from '@angular/platform-browser';
+import { FeaturedProductSliderComponent } from './featuredProductSlider/featuredProductSlider.component';
+import { ProducerSliderComponent } from './producerSlider/producerSlider.component';
 
 const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
     observer: true,
@@ -25,10 +27,14 @@ const DEFAULT_SWIPER_CONFIG: SwiperConfigInterface = {
         SwiperModule,
     ],
     declarations: [
-        BannerSliderComponent
+        BannerSliderComponent,
+        FeaturedProductSliderComponent,
+        ProducerSliderComponent
     ],
     exports: [
-        BannerSliderComponent
+        BannerSliderComponent,
+        FeaturedProductSliderComponent,
+        ProducerSliderComponent
     ],
     providers: [
         WidgetsService,
