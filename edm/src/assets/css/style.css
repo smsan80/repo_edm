@@ -55,7 +55,7 @@ app-header {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 2;
 }
 app-body {
     margin-top: 116px;
@@ -172,6 +172,7 @@ label.checkbox, label.radio {
     text-align: center;
     box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.19);
     -webkit-box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.19);
+    text-decoration: none;
 }
 .global_circle_btn {
     padding: 8px 20px;
@@ -184,6 +185,7 @@ label.checkbox, label.radio {
     text-align: center;
     box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.19);
     -webkit-box-shadow: 0 1px 4px 0px rgba(0, 0, 0, 0.19);
+    text-decoration: none;
 }
 .btn_icon {
     background-size: 100% 100% !important;
@@ -191,9 +193,7 @@ label.checkbox, label.radio {
     height: 19px;
     margin-left: 5px;
     float: right;
-}
-.global_btn span, .global_circle_btn span {
-    vertical-align: middle;
+    background-position: center !important;
 }
 .icon_btn {
     text-align: left;
@@ -288,6 +288,9 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
     background: url(../images/dropdown_arrow.svg) no-repeat;
     height: 6px;
     cursor: pointer;
+}
+.double_right_icon {
+    background: url(../images/double_right_arrow.svg) no-repeat;
 }
 .edm_body {
     padding-top: 116px;

@@ -1,0 +1,212 @@
+.hp_banner_section {
+    display: table;
+    width: 100%;
+}
+.search_track_sec, .home_banner_sec {
+    display: table-cell;
+}
+.search_track img {
+    width: 25px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    bottom: 0;
+    height: 100%;
+    margin: 0 10px;
+}
+.search_track_sec {
+    background: #F8F8F8;
+    vertical-align: middle;
+    text-align: center;
+    width: 43%;
+}
+.serch_inner_sec {
+    width: 69%;
+    margin: 0 auto;
+    text-align: left;
+}
+.serch_inner_sec > h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.search_track {
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+}
+.search_track input {
+    border: 1px solid #949391;
+    padding: 10px 10px 10px 40px;
+    vertical-align: top;
+    border-right: 0;
+    width: calc(100% - 100px);
+}
+.search_track .global_btn {
+    border-radius: 0px 5px 5px 0;
+    margin: 0;
+    padding: 11px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.home_banner_sec {
+    width: 57%;
+}
+.popular_tags_section h2 {
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+}
+.popular_tags_section p {
+    font-size: 11px;
+    display: inline-block;
+    margin: 0 10px 10px 0;
+    border: 1px solid #C8C8C8;
+    padding: 3px 5px;
+    color: #626262;
+    border-radius: 4px;
+}
+.hp_sections {
+    margin-bottom: 70px;
+}
+.hp_heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.hp_heading:before {
+    content: "";
+    width: 170px;
+    height: 2px;
+    background: #05C38F;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    margin: 0 auto;
+}
+.vedio_content, .play_vedio {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+}
+.vedio_content {
+    background: #F8F8F8;
+    padding: 0 40px;
+}
+.left_border {
+    text-align: left !important;
+}
+.left_border::before {
+    margin: 0 !important;
+}
+.vedio_steps {
+    list-style: none;
+}
+.vedio_steps li {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.vedio_steps li i {
+    border: 2px solid #464646;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 100%;
+    font-size: 17px;
+    font-style: unset;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.vedio_steps li span {
+    display: inline-block;
+    width: calc(100% - 50px);
+    vertical-align: top;
+    padding: 3px 0 0 0;
+}
+.hp_block_section {
+    display: inline-block;
+    width: 100%;
+    padding: 0 30px;
+}
+.branding_sec {
+    width: 25%;
+    display: inline-block;
+    padding: 0 10px;
+}
+.branding_data img {
+    width: 100%;
+    border-radius: 15px;
+}
+.branding_data {
+    background: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: color .10s ease-in-out,background-color .10s ease-in-out,border-color .10s ease-in-out,box-shadow .10s ease-in-out;
+}
+.branding_data p {
+    padding: 15px 5px;
+    font-size: 19px;
+    text-align: center;
+    margin: 0;
+}
+.branding_data:hover {
+    box-shadow: 0 0 7px #dadada;
+    -webkit-box-shadow: 0 0 7px #dadada;
+    -moz-box-shadow: 0 0 7px #dadada;
+}
+.news_sec {
+    width: 33.33%;
+    display: inline-block;
+    padding: 0 30px;
+    vertical-align: top;
+    min-height: 377px;
+}
+.news_data {
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+.news_data:hover {
+    box-shadow: 0 0 7px #dadada;
+    -webkit-box-shadow: 0 0 7px #dadada;
+    -moz-box-shadow: 0 0 7px #dadada;
+}
+.news_data:hover .news_content .global_btn {
+    display: inline-block;
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+.news_content .global_btn {
+    display: none;
+}
+.news_data img {
+    width: 100%;
+    border-radius: 10px;
+}
+.news_content {
+    background: #F8F8F8;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+.news_content h2 {
+    color: #05c38f;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+.news_content p {
+    font-size: 13px;
+    color: #808080;
+    margin-bottom: 15px;
+}
+.news_content .btn_icon {
+    width: 13px;
+}
