@@ -26,7 +26,7 @@ import { EncryptedStorage } from './_appModel/encryptedstorage';
     CommonService,
     AppSessionService,
     BaseServiceHelper,
-    EncryptedStorage,
+    EncryptedStorage
   ],
   bootstrap: [AppComponent]
 })

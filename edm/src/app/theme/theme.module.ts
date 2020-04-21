@@ -9,6 +9,7 @@ import { ThemeRoutingModule } from './theme-routing.module';
 import { HomeModule } from '../home/home.module';
 import { LoginModule } from '../auth/login/login.module';
 import { SignUpModule } from '../auth/signup/signup.module';
+import { GenerModule } from '../gener/gener.module';
 @NgModule({
     declarations: [
         ThemeComponent,
@@ -21,6 +22,7 @@ import { SignUpModule } from '../auth/signup/signup.module';
         HomeModule,
         LoginModule,
         SignUpModule,
+        GenerModule,
         ThemeRoutingModule,
     ],
     providers: []
