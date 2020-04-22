@@ -23,11 +23,7 @@ export class BannerSliderComponent implements OnInit {
     ]; public config: SwiperConfigInterface = {
         direction: 'horizontal',
         slidesPerView: 1,
-        keyboard: true,
-        mousewheel: true,
-        scrollbar: false,
-        navigation: true,
-        pagination: false,
+        pagination: true,
         autoplay: true,
     };
 

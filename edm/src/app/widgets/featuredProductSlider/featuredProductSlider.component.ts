@@ -31,10 +31,7 @@ export class FeaturedProductSliderComponent implements OnInit {
         'Sixth slide'
     ]; public config: SwiperConfigInterface = {
         direction: 'horizontal',
-        slidesPerView: 3,
-        keyboard: true,
-        mousewheel: true,
-        scrollbar: false,
+        slidesPerView: 5,
         navigation: true,
         pagination: false,
         autoplay: true,

@@ -31,11 +31,7 @@ export class ProducerSliderComponent implements OnInit {
         'Sixth slide'
     ]; public config: SwiperConfigInterface = {
         direction: 'horizontal',
-        slidesPerView: 3,
-        keyboard: true,
-        mousewheel: true,
-        scrollbar: false,
-        navigation: true,
+        slidesPerView: 5,
         pagination: false,
         autoplay: true,
     };
