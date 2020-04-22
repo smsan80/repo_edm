@@ -296,7 +296,7 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
     padding-top: 116px;
 }
 
- /* ********** Responsive ********** */
+/* ********** Responsive ********** */
 
 @media screen and (max-width: 800px) {
     app-header {
