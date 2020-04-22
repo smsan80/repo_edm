@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Helpers } from '../_appModel/helpers';
+import { BaseServiceHelper } from '../_appService/baseHelper.service';
+import { enAppSession } from '../_appModel/enAppSession';
+import { RegisterService } from '../_appService/register.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +11,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _base: BaseServiceHelper) { }
 
   ngOnInit(): void {
+  
   }
 
+ 
 }

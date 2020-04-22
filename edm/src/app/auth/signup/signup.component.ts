@@ -26,24 +26,25 @@ export class SignupComponent implements OnInit {
     debugger
     this.submitted = true;
     if (formSignUp.valid) {
-      if (this._userModel.Password == this._userModel.RePassword) {
-        this._base._encryptedStorage.get(enAppSession.IsGuestUser).then(IsGuestUser => {
-          this._base._encryptedStorage.get(enAppSession.Ref_User_ID).then(Ref_User_ID => {
-            this._userModel.Ref_User_Id = Ref_User_ID;
-            this._userModel.CreatedBy = Ref_User_ID;
-            this._userModel.UpdatedBy = Ref_User_ID;
-            this._userModel.IsGuestUser = IsGuestUser;
-            debugger
-            this._registerService.registerCustomer(this._userModel).subscribe(response => {
-              this._base._encryptedStorage.set(enAppSession.IsGuestUser, false);
-              if (response[0].Response == 'USERADDEDSUCCESSFULLY') {
-                this._userModel.User_Code = this._userModel.Email;
-                console.log('response', response);
+      this._base._encryptedStorage.get(enAppSession.IsGuestUser).then(IsGuestUser => {
+        this._base._encryptedStorage.get(enAppSession.Ref_User_ID).then(Ref_User_ID => {
+          this._userModel.Ref_User_Id = Ref_User_ID;
+          this._userModel.CreatedBy = Ref_User_ID;
+          this._userModel.UpdatedBy = Ref_User_ID;
+          this._userModel.IsGuestUser = IsGuestUser;
+          debugger
+          this._registerService.registerCustomer(this._userModel).subscribe(response => {
+            this._base._encryptedStorage.set(enAppSession.IsGuestUser, false);
+            if (response[0].Response == 'USERADDEDSUCCESSFULLY') {
+              this._userModel.User_Code = this._userModel.Email;
+              console.log('response', response);
+              this._base._encryptedStorage.get(enAppSession.Ref_GuestUser_ID).then(Ref_GuestUser_ID => {
+                this._userModel.Ref_GuestUser_ID = Ref_GuestUser_ID;
                 this._registerService.loginCustomer(this._userModel).subscribe(res => {
                   if (res[0].Response == 'SUCCESS') {
                     let responseData = res[0];
                     // this._base._CommonService.showAlert("Registered success!", false);
-                    // this._base._AppSessionService.setUserSession(responseData);
+                    this._base._appSessionService.setUserSession(responseData);
                     // this._communicationModel = {
                     //   Recipients: responseData.Email,
                     //   TemplateSelector: 'WELCOME_EMAIL',
@@ -52,28 +53,26 @@ export class SignupComponent implements OnInit {
                     // this._communication.sendWelcomeMail(this._communicationModel).subscribe((res: any) => {
                     // })
                     setTimeout(() => {
+                      this._base._commonService.navigation('home');
                       //this._events.publish('user:signedIn', responseData);
-                    }, 1000);
+                    }, 500);
                   } else {
                     // this._base._vibration.vibrate(100);
                     // this._base._CommonService.showAlert("Please try after sometime!", false);
                   }
                 });
-              } else if (response[0].Response == 'USERALREADYEXISTS') {
-                // this._base._vibration.vibrate(100);
-                // this._base._CommonService.showAlert("User already exits!", false);
-              }
-              else {
-                // this._base._vibration.vibrate(100);
-                // this._base._CommonService.showAlert("Please try after sometime!", false);
-              }
-            });
+              });
+            } else if (response[0].Response == 'USERALREADYEXISTS') {
+              // this._base._vibration.vibrate(100);
+              // this._base._CommonService.showAlert("User already exits!", false);
+            }
+            else {
+              // this._base._vibration.vibrate(100);
+              // this._base._CommonService.showAlert("Please try after sometime!", false);
+            }
           });
         });
-      } else {
-        // this._base._vibration.vibrate(100);
-        // this._base._CommonService.showAlert("Password and Re-Password does not matched. Please try again later!", false, 3000);
-      }
+      });
     }
   }
   numberOnly(event) {

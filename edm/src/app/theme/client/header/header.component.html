@@ -3,9 +3,10 @@
         <div class="open_mobile_menu">
             <img src="../../../../assets/images/navigation.svg">
         </div>
-        <div class="mobile_menu menu_open_animation"> <!-- "menu_close_animation" Class while Closing menu panel -->
+        <div class="mobile_menu menu_open_animation">
+            <!-- "menu_close_animation" Class while Closing menu panel -->
             <div class="mobile_project_logo">
-                <a (click)="redirectUrl('home')" >
+                <a (click)="redirectUrl('home')">
                     <img src="../../../../assets/images/logo.PNG" alt="EDM Logo" />
                 </a>
             </div>
@@ -62,10 +63,11 @@
         </div>
         <div class="user_profile">
             <div class="user_profile_img">
-                <img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg" />
+                <img *ngIf="hasLogin"
+                    src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg" />
             </div>
         </div>
-        <div class="signin_btn">
+        <div class="signin_btn" *ngIf="hasLogin">
             <a (click)="redirectUrl('login')" class="global_circle_btn primary_btn no_margin">
                 <span>SIGN IN</span>
             </a>

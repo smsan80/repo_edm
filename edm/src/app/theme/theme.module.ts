@@ -10,6 +10,7 @@ import { HomeModule } from '../home/home.module';
 import { LoginModule } from '../auth/login/login.module';
 import { SignUpModule } from '../auth/signup/signup.module';
 import { GenerModule } from '../gener/gener.module';
+import { ProductModule } from '../product/product.module';
 @NgModule({
     declarations: [
         ThemeComponent,
@@ -23,6 +24,7 @@ import { GenerModule } from '../gener/gener.module';
         LoginModule,
         SignUpModule,
         GenerModule,
+        ProductModule,
         ThemeRoutingModule,
     ],
     providers: []

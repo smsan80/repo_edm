@@ -12,6 +12,7 @@ export interface userModel {
     DateOfBirth?: any,
     Website?: any,
     Ref_User_Id?: any,
+    Ref_GuestUser_ID?: any,
     CreatedBy?: any,
     UpdatedBy?: any
 }

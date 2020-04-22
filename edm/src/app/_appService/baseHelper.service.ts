@@ -11,5 +11,6 @@ export class BaseServiceHelper {
     constructor(public _ApiService: ApiService,
         public _appSessionService: AppSessionService,
         public _commonService: CommonService,
+        public _router: Router,
         public _encryptedStorage: EncryptedStorage) { }
 }

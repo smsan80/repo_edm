@@ -19,6 +19,22 @@ const routes: Routes = [
                 path: "signup",
                 loadChildren: "../auth/signup/signup.module#SignUpModule"
             },
+            {
+                path: "geners",
+                loadChildren: "../gener/gener.module#GenerModule"
+            },
+            {
+                path: "geners/details",
+                loadChildren: "../gener/gener.module#GenerModule"
+            },
+            {
+                path: "product",
+                loadChildren: "../product/product.module#ProductModule"
+            },
+            {
+                path: "product/details",
+                loadChildren: "../product/product.module#ProductModule"
+            },
         ],
     }
 ];

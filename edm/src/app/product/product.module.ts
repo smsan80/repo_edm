@@ -1,25 +1,25 @@
 // import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { GenerComponent } from './gener.component';
-import { GenerDetailsComponent } from './generdetails/generdetails.component';
+import { ProductComponent } from './product.component';
+import { ProductDetailsComponent } from './productdetails/productdetails.component';
 @NgModule({
     declarations: [
-        GenerComponent,
-        GenerDetailsComponent
+        ProductComponent,
+        ProductDetailsComponent
     ],
     imports: [
         RouterModule.forChild([
             {
                 path: '',
-                component: GenerComponent
+                component: ProductComponent
             },
             {
                 path: 'details',
-                component: GenerDetailsComponent
+                component: ProductDetailsComponent
             }
         ]),
     ],
     providers: []
 })
-export class GenerModule { }
+export class ProductModule { }

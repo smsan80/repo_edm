@@ -14,6 +14,7 @@ export class CommonService {
     }
     browser
     public isOnline: boolean = true;
+    public hasOnline: boolean = false;
     public ipAddress: string = "";
 
     public navigation(url: any) {

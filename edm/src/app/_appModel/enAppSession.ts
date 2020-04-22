@@ -5,7 +5,7 @@ export enum enAppSession {
     MobileNumber,
     Email_ID,
     IsGuestUser,
-    Guest_User_ID,
+    Ref_GuestUser_ID,
     Ref_GuestUser_GUID,
     Ref_User_GUID,
     Ref_Device_GUID,

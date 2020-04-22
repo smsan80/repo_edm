@@ -2,11 +2,12 @@
 import { Injectable } from '@angular/core';
 import { EncryptedStorage } from '../_appModel/encryptedstorage';
 import { enAppSession } from '../_appModel/enAppSession';
+import { CommonService } from './common.service';
 
 
 @Injectable()
 export class AppSessionService {
-    constructor(public _encryptedStorage: EncryptedStorage) { }
+    constructor(public _encryptedStorage: EncryptedStorage, private _commonSerice: CommonService) { }
     setUserSession(responseData) {
         this._encryptedStorage.set(enAppSession.Ref_User_ID, responseData.Ref_User_ID);
         this._encryptedStorage.set(enAppSession.FullName, responseData.FullName);
