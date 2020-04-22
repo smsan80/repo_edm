@@ -35,6 +35,10 @@ const routes: Routes = [
                 path: "product/details",
                 loadChildren: "../product/product.module#ProductModule"
             },
+            {
+                path: "error/404",
+                loadChildren: "../errors/errors.module#ErrorsModule"
+            },
         ],
     }
 ];

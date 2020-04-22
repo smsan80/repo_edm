@@ -11,6 +11,7 @@ import { LoginModule } from '../auth/login/login.module';
 import { SignUpModule } from '../auth/signup/signup.module';
 import { GenerModule } from '../gener/gener.module';
 import { ProductModule } from '../product/product.module';
+import { ErrorsModule } from '../errors/errors.module';
 @NgModule({
     declarations: [
         ThemeComponent,
@@ -25,6 +26,7 @@ import { ProductModule } from '../product/product.module';
         SignUpModule,
         GenerModule,
         ProductModule,
+        ErrorsModule,
         ThemeRoutingModule,
     ],
     providers: []
