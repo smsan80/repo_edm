@@ -25,6 +25,7 @@ export class BannerSliderComponent implements OnInit {
         slidesPerView: 1,
         pagination: true,
         autoplay: true,
+        autoHeight: true,
     };
 
     private scrollbar: SwiperScrollbarInterface = {
