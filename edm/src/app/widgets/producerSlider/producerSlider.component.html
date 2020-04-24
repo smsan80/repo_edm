@@ -1,9 +1,33 @@
-<swiper class="featuredSlider-container" [config]="config">
+<swiper class="product_slider producer_slider" [config]="config">
     <div *ngFor="let slide of slides" class="swiper-slide">
-        <div>
-            <img src=" ../../../../../assets/images/album_art.jpg">
-            <span>PRoducer Name</span>
-            <span>I will be your dope musice producer</span>
+        <div class="slider_product">
+            <div class="product_img">
+                <img src=" ../../../../../assets/images/product_thumbnail.jpg" class="product_thumbnail">
+                <!-- <img src=" ../../../../../assets/images/product_thumbnail.jpg" class="product_thumbnail"> -->
+                <div class="producer_upper_layer">
+                    <div class="producer_profile_photo">
+                        <img src="../../../assets/images/producer_profile.jpg" />
+                    </div>
+                    <p class="product_name">
+                        CLOCK TYPE
+                        <!-- <img src="" /> -->
+                    </p>
+                    <p class="producer_info">
+                        I will be you <br>dope music producer
+                    </p>
+                </div>
+            </div>
+            <div class="product_details">
+                <div class="slider_buttons">
+                    <a class="global_btn icon_btn primary_btn">
+                        <span>Follow</span>
+                        <span class="follow_icon btn_icon left_btn_icon"></span>
+                    </a>
+                    <a class="global_btn grey_btn">
+                        <span>View Profile</span>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </swiper>

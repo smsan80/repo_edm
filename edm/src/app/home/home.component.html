@@ -3,10 +3,9 @@
 <app-producerSlider></app-producerSlider> -->
 
 <div class="hp_sections hp_banner_section">
-    <div class="home_banner_sec">
+    <div class="home_banner_sec mobile_banner">
         <div class="banner_cross_part"></div>
         <app-bannerSlider></app-bannerSlider>
-
     </div>
     <div class="search_track_sec">
         <div class="serch_inner_sec">
@@ -22,18 +21,12 @@
                 <h2>Popular:</h2>
                 <p>Custom Track</p>
                 <p>Artist Branding</p>
-                <p>Dummy Track</p>
-                <p>Custom Track</p>
-                <p>Artist Branding</p>
-                <p>Dummy Track</p>
-                <p>Custom Track</p>
-                <p>Artist Branding</p>
-                <p>Dummy Track</p>
-                <p>Custom Track</p>
-                <p>Artist Branding</p>
-                <p>Dummy Track</p>
             </div>
         </div>
+    </div>
+    <div class="home_banner_sec desktop_banner">
+        <div class="banner_cross_part"></div>
+        <app-bannerSlider></app-bannerSlider>
     </div>
 </div>
 
@@ -41,7 +34,9 @@
     <h2 class="hp_heading">
         Featured Track
     </h2>
-    <app-featuredProductSlider></app-featuredProductSlider>
+    <div class="hp_slider">
+        <app-featuredProductSlider></app-featuredProductSlider>
+    </div>
 </div>
 
 <div class="hp_sections hp_vedio_section">
@@ -109,7 +104,9 @@
     <h2 class="hp_heading">
         Get Inspired by Top Notch Producers
     </h2>
-    <app-producerSlider></app-producerSlider>
+    <div class="hp_slider">
+        <app-producerSlider></app-producerSlider>
+    </div>
 </div>
 
 <div class="hp_sections">

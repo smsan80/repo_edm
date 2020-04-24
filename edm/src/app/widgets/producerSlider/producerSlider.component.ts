@@ -8,7 +8,7 @@ import {
 @Component({
     selector: 'app-producerSlider',
     templateUrl: './producerSlider.component.html',
-    styleUrls: ['./producerSlider.component.scss']
+    styleUrls: ['../featuredProductSlider/featuredProductSlider.component.scss']
 })
 export class ProducerSliderComponent implements OnInit {
     @ViewChild(SwiperComponent) componentRef: SwiperComponent;
@@ -31,9 +31,28 @@ export class ProducerSliderComponent implements OnInit {
         'Sixth slide'
     ]; public config: SwiperConfigInterface = {
         direction: 'horizontal',
-        slidesPerView: 5,
+        navigation: false,
         pagination: false,
-        autoplay: true,
+        autoplay: false,
+        centeredSlides: false,
+        breakpoints: {
+            450: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            700: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            950: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+            },
+        }
     };
 
     private scrollbar: SwiperScrollbarInterface = {

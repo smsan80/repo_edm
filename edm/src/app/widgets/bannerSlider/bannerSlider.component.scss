@@ -1,0 +1,17 @@
+swiper>.swiper.s-wrapper .swiper-pagination .swiper-pagination-handle .swiper-pagination-bullet.swiper-pagination-bullet-first, swiper>.swiper.s-wrapper .swiper-pagination .swiper-pagination-handle .swiper-pagination-bullet.swiper-pagination-bullet-last {
+    border: 0;
+}
+.swiper-pagination-bullet {
+    background: #DCDCDC;
+    opacity: 0.4;
+}
+swiper>.swiper.s-wrapper.swiper-container-horizontal>.swiper-pagination .swiper-pagination-handle .swiper-pagination-bullet.swiper-pagination-bullet-first, swiper>.swiper.s-wrapper.swiper-container-horizontal>.swiper-pagination .swiper-pagination-handle .swiper-pagination-bullet.swiper-pagination-bullet-last {
+    margin: 0;
+}
+swiper>.swiper.s-wrapper .swiper-pagination .swiper-pagination-handle {
+    padding: 0;
+    margin: 4px;
+}
+.swiper-pagination-bullet-active {
+    background: #05C38F;
+}

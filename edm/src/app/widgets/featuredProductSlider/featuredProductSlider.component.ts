@@ -31,10 +31,28 @@ export class FeaturedProductSliderComponent implements OnInit {
         'Sixth slide'
     ]; public config: SwiperConfigInterface = {
         direction: 'horizontal',
-        slidesPerView: 5,
-        navigation: true,
+        navigation: false,
         pagination: false,
-        autoplay: true,
+        autoplay: false,
+        centeredSlides: false,
+        breakpoints: {
+            450: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            700: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            950: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 50,
+            },
+        }
     };
 
     private scrollbar: SwiperScrollbarInterface = {
