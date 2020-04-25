@@ -1,14 +1,16 @@
-// import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { GenerComponent } from './gener.component';
 import { GenerDetailsComponent } from './generdetails/generdetails.component';
+import { GenerService } from './_service/gener.service';
+import { CommonModule } from '@angular/common';
 @NgModule({
     declarations: [
         GenerComponent,
         GenerDetailsComponent
     ],
     imports: [
+        CommonModule,
         RouterModule.forChild([
             {
                 path: '',
@@ -20,6 +22,6 @@ import { GenerDetailsComponent } from './generdetails/generdetails.component';
             }
         ]),
     ],
-    providers: []
+    providers: [GenerService]
 })
 export class GenerModule { }
