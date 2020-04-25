@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  //apiBaseURL: "http://webdroids-001-site2.itempurl.com/api",
-  apiBaseURL: "http://localhost:2763/api",
+  apiBaseURL: "http://webdroids-001-site2.itempurl.com/api",
+  //apiBaseURL: "http://localhost:2763/api",
   oneSignalID: "11d4c1e1-6e94-4733-9d48-705d2c7f1927",
   ipifyUrl: 'https://api.ipify.org/?format=json',
   WebDClietID: 'WEBDROIDS',

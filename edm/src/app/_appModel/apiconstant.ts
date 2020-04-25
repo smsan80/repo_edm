@@ -8,4 +8,8 @@ export class ApiConstant {
         requestOTP: "Admin/UserManagement/RequestOTP",
         registerGuest: "Admin/UserManagement/RegisterGuest",
     }
+    public static generDetails = {
+        Gener:"Admin/GenerManagement/Gener",
+        generList:"Admin/GenerManagement/GenerList"
+    }
 }

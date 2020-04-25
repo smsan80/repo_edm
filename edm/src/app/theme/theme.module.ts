@@ -12,6 +12,8 @@ import { SignUpModule } from '../auth/signup/signup.module';
 import { GenerModule } from '../gener/gener.module';
 import { ProductModule } from '../product/product.module';
 import { ErrorsModule } from '../errors/errors.module';
+import { WidgetsModule } from '../widgets/widget.module';
+import { CommonModule } from '@angular/common';
 @NgModule({
     declarations: [
         ThemeComponent,
@@ -19,9 +21,11 @@ import { ErrorsModule } from '../errors/errors.module';
         HeaderComponent,
         FooterComponent,
     ],
-    imports: [
+    imports: [        
         RouterModule,
+        CommonModule,
         HomeModule,
+        WidgetsModule,
         LoginModule,
         SignUpModule,
         GenerModule,
