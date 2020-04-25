@@ -23,7 +23,6 @@ export class SignupComponent implements OnInit {
     this._base._commonService.navigation('login');
   }
   register(formSignUp: NgForm) {
-    debugger
     this.submitted = true;
     if (formSignUp.valid) {
       this._base._encryptedStorage.get(enAppSession.IsGuestUser).then(IsGuestUser => {
@@ -32,7 +31,6 @@ export class SignupComponent implements OnInit {
           this._userModel.CreatedBy = Ref_User_ID;
           this._userModel.UpdatedBy = Ref_User_ID;
           this._userModel.IsGuestUser = IsGuestUser;
-          debugger
           this._registerService.registerCustomer(this._userModel).subscribe(response => {
             this._base._encryptedStorage.set(enAppSession.IsGuestUser, false);
             if (response[0].Response == 'USERADDEDSUCCESSFULLY') {

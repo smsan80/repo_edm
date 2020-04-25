@@ -88,7 +88,6 @@ export class CommonService {
     }
 
     padStartData(padString: any, targetLength: number, padValue: any) {
-        debugger
         let result = padString;
         if (targetLength > padString.length) {
             result = this.generatePaddingData(padValue, targetLength - padString.length) + padString;

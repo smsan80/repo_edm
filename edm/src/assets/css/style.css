@@ -195,6 +195,11 @@ label.checkbox, label.radio {
     float: right;
     background-position: center !important;
 }
+.left_btn_icon {
+    margin-left: 0;
+    margin-right: 5px;
+    float: left;
+}
 .icon_btn {
     text-align: left;
 }
@@ -210,6 +215,15 @@ label.checkbox, label.radio {
     background: #04af80;
     border: 1px solid #05C38F;
     color: white !important;
+}
+.grey_btn {
+    background: #E9E9E9;
+    color: #04af80 !important;
+    border: 1px solid #E9E9E9;
+}
+.grey_btn:hover {
+    background: #dedddd;
+    border: 1px solid #dedddd;
 }
 .secondary_btn {
     background: #ffffff;
@@ -292,10 +306,15 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
 .double_right_icon {
     background: url(../images/double_right_arrow.svg) no-repeat;
 }
+.add_to_cart_icon {
+    background: url(../images/add_to_cart.svg) no-repeat;
+}
+.follow_icon {
+    background: url(../images/follow.svg) no-repeat;
+}
 .edm_body {
     padding-top: 116px;
 }
-
 /* ********** Responsive ********** */
 
 @media screen and (max-width: 800px) {

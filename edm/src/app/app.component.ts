@@ -16,7 +16,6 @@ export class AppComponent {
 
   ngOnInit(): void {
     this._base._encryptedStorage.get(enAppSession.IsGuestUser).then(IsGuestUser => {
-      debugger
       if (!IsGuestUser) {
         this.registerGuest();
       }
@@ -25,7 +24,6 @@ export class AppComponent {
   }
   registerGuest() {
     Helpers.setLoading(true);
-    debugger
     this._register.registerGuest().subscribe((res: any) => {
       if (res != undefined && res != null && res != '') {
         //setRef_ Gest_GUID in Ref_User_GUID
