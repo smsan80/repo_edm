@@ -221,16 +221,6 @@
 .news_content .btn_icon {
     width: 13px;
 }
-.banner_cross_part {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 399px 27vh 0 0;
-    border-color: #f8f8f8 transparent transparent transparent;
-    position: absolute;
-    left: -1px;
-    z-index: 2;
-}
 .mobile_banner {
     display: none;
 }
@@ -241,6 +231,17 @@
     background-size: 19px 19px !important;
     width: 19px;
     height: 24px;
+}
+.banner_cross_part {
+    background: url(../../assets/images/banner_cross_part.svg) no-repeat;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    background-size: 100% 100% !important;
+    width: 170px;
+    height: 101%;
+    display: inline-block;
+    z-index: 2;
 }
 /* ********** Responsive ********** */
 
@@ -271,6 +272,9 @@
     .branding_data p {
         padding: 12px 5px;
         font-size: 16px;
+    }
+    .banner_cross_part {
+        width: 130px;
     }
 }
 
