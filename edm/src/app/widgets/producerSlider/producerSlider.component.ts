@@ -36,21 +36,21 @@ export class ProducerSliderComponent implements OnInit {
         autoplay: false,
         centeredSlides: false,
         breakpoints: {
-            450: {
+            501: {
                 slidesPerView: 2,
                 spaceBetween: 10,
             },
-            700: {
+            701: {
                 slidesPerView: 3,
                 spaceBetween: 20,
             },
-            950: {
+            951: {
                 slidesPerView: 4,
                 spaceBetween: 20,
             },
-            1200: {
+            1201: {
                 slidesPerView: 5,
-                spaceBetween: 30,
+                spaceBetween: 50,
             },
         }
     };

@@ -23,7 +23,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     background: #05C38F; 
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #05C38F; 
+    background: #04af80; 
 }
 /* placeholder */
 ::placeholder {
@@ -80,13 +80,20 @@ a, a:hover {
 .no_padding {
     padding: 0 !important;
 }
-/* Error msg */
 .error_msg {
     color: red;
     display: inline-block;
     width: 100%;
     font-size: 12px;
     margin: 0;
+}
+.disable_section {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 /* checkbox and Radio button */
 .checkbox input, .radio input {
@@ -281,6 +288,104 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
 .form_group input:focus, .form_group textarea:focus, .form_group select:focus {
     border: 1px solid #05C38F;
 }
+/* left slider */
+.left_panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    height: 100vh;
+    background: white;
+    overflow: auto;
+    box-shadow: -3px 0px 8px #bbbbbb;
+}
+.panel_open_animation {
+    -webkit-animation-name: animateleft;
+    animation-name: animateleft;
+    animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+.show_content {
+    display: block !important;
+}
+@-webkit-keyframes animateleft {
+    from {
+        transform: translate3d(-80%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+@keyframes animateleft {
+    from {
+        transform: translate3d(-80%, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+.panel_close_animation {
+    -webkit-animation-name: animateright;
+    animation-name: animateright;
+    animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+@-webkit-keyframes animateright {
+    from {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+@keyframes animateright {
+    from {
+        transform: translate3d(0, 0, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+.global_heading {
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.global_heading:before {
+    content: "";
+    width: 170px;
+    height: 2px;
+    background: #05C38F;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    margin: 0 auto;
+}
+.global_heading_left_border {
+    text-align: left !important;
+}
+.global_heading_left_border::before {
+    margin: 0 !important;
+}
+.global_sections {
+    margin-bottom: 70px;
+    display: inline-block;
+    width: 100%;
+}
+.global_slider {
+    padding: 0 40px;
+}
 /* background Images */
 .user_icon {
     background: url(../images/user_name.svg) no-repeat;
@@ -312,10 +417,39 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
 .follow_icon {
     background: url(../images/follow.svg) no-repeat;
 }
+.add_to_favourites_icon {
+    background: url(../images/blank_red_heart.svg) no-repeat;
+}
 .edm_body {
     padding-top: 116px;
 }
+
 /* ********** Responsive ********** */
+
+@media screen and (max-width: 1200px) {
+    .global_heading {
+        font-size: 27px;
+        margin-bottom: 40px;
+    }
+    .global_heading:before {
+        width: 140px;
+    }
+    .global_sections {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .global_heading_left_border {
+        text-align: center !important;
+    }
+    .global_heading_left_border::before {
+        margin: 0 auto !important;
+    }
+    .global_slider {
+        padding: 0 40px;
+    }
+}
 
 @media screen and (max-width: 800px) {
     app-header {
@@ -324,5 +458,30 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
     app-body {
         margin-top: 68px;
         min-height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .global_heading {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .global_heading:before {
+        width: 120px;
+    }
+    .global_sections {
+        margin-bottom: 40px;
+    }
+    .global_slider {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .global_sections {
+        margin-bottom: 30px;
+    }
+    .global_slider {
+        padding: 0 20px;
     }
 }

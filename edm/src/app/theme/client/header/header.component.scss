@@ -69,16 +69,8 @@
     cursor: pointer;
 }
 .mobile_menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    height: 100vh;
-    background: white;
-    width: 250px;
-    overflow: auto;
-    box-shadow: -3px 0px 8px #bbbbbb;
     display: none;
+    width: 250px;
 }
 .mobile_project_logo img {
     cursor: pointer;
@@ -113,58 +105,6 @@
 .mobile_menu_list p a:hover {
     background: #05c38f;
     color: white !important;
-}
-.menu_open_animation {
-    -webkit-animation-name: animateleft;
-    animation-name: animateleft;
-    animation-duration: 0.4s;
-    -webkit-animation-duration: 0.4s;
-    animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-}
-@-webkit-keyframes animateleft {
-    from {
-        transform: translate3d(-80%, 0, 0);
-        visibility: visible;
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-    }
-}
-@keyframes animateleft {
-    from {
-        transform: translate3d(-80%, 0, 0);
-        visibility: visible;
-    }
-    to {
-        transform: translate3d(0, 0, 0);
-    }
-}
-.menu_close_animation {
-    -webkit-animation-name: animateright;
-    animation-name: animateright;
-    animation-duration: 0.4s;
-    -webkit-animation-duration: 0.4s;
-    animation-fill-mode: both;
-    -webkit-animation-fill-mode: both;
-}
-@-webkit-keyframes animateright {
-    from {
-        transform: translate3d(0, 0, 0);
-        visibility: visible;
-    }
-    to {
-        transform: translate3d(-100%, 0, 0);
-    }
-}
-@keyframes animateright {
-    from {
-        transform: translate3d(0, 0, 0);
-        visibility: visible;
-    }
-    to {
-        transform: translate3d(-100%, 0, 0);
-    }
 }
 .user_profile_img {
     background: #556080 url("../../../../assets/images/user_profile.svg");
