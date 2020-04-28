@@ -39,6 +39,14 @@ const routes: Routes = [
                 path: "error/404",
                 loadChildren: "../errors/errors.module#ErrorsModule"
             },
+            {
+                path: "service",
+                loadChildren: "../service/service.module#ServiceModule"
+            },
+            {
+                path: "service/details",
+                loadChildren: "../service/service.module#ServiceModule"
+            }
         ],
     }
 ];

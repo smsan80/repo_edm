@@ -14,6 +14,7 @@ import { ProductModule } from '../product/product.module';
 import { ErrorsModule } from '../errors/errors.module';
 import { WidgetsModule } from '../widgets/widget.module';
 import { CommonModule } from '@angular/common';
+import { ServiceModule } from '../service/service.module';
 @NgModule({
     declarations: [
         ThemeComponent,
@@ -31,6 +32,7 @@ import { CommonModule } from '@angular/common';
         GenerModule,
         ProductModule,
         ErrorsModule,
+        ServiceModule,
         ThemeRoutingModule,
     ],
     providers: []
