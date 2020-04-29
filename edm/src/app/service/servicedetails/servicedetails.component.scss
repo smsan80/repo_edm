@@ -1,0 +1,263 @@
+.servicedetails_page {
+    background: #F9F9F9;
+    padding: 0 30px 50px 30px;
+}
+.servicesdetails_section {
+    padding: 20px 0;
+}
+.left_user_profile img {
+    background: white;
+    padding: 7px;
+    border: 2px solid #05c38f;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+.left_user_profile:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #05c38f;
+    position: absolute;
+    right: 4px;
+    top: 10px;
+    display: inline-block;
+    border-radius: 100%;
+}
+.left_user_profile {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.right_user_profile {
+    display: inline-block;
+    width: calc(100% - 82px);
+    vertical-align: middle;
+    padding-left: 15px;
+}
+.right_user_profile h3 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+}
+.right_user_profile p {
+    margin: 0;
+    font-size: 23px;
+}
+.left_listing_img {
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+}
+.left_listing_img img {
+    border-radius: 15px;
+    width: 100%;
+}
+.right_listings {
+    display: inline-block;
+    width: calc(100% - 400px);
+    padding-left: 50px;
+}
+.vedio_steps {
+    list-style: none;
+    margin: 0;
+    width: 100%;
+}
+.vedio_steps li {
+    margin-bottom: 15px;
+    width: 100%;
+}
+.vedio_steps li i {
+    border: 2px solid #05C38F;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 100%;
+    font-size: 15px;
+    font-style: unset;
+    margin-right: 10px;
+    vertical-align: top;
+    font-weight: bold;
+}
+.vedio_steps li span {
+    display: inline-block;
+    width: calc(100% - 50px);
+    vertical-align: top;
+    padding: 4px 0 0 0;
+    font-size: 15px;
+    color: #575757;
+}
+.right_listings .global_btn {
+    margin-top: 15px;
+}
+.services_heading {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.description_section p {
+    font-size: 18px;
+    color: #777777;
+    margin-bottom: 0;
+}
+.accordian {
+    background: #F5F5F5;
+    box-shadow: 0 0 7px #e2e2e2;
+    -webkit-box-shadow: 0 0 7px #e2e2e2;
+    -moz-box-shadow: 0 0 7px #e2e2e2;
+    cursor: pointer;
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.accordian:hover {
+    box-shadow: 0 0 7px #bfbfbf;
+    -webkit-box-shadow: 0 0 7px #bfbfbf;
+    -moz-box-shadow: 0 0 7px #bfbfbf;
+}
+.accordian .services_heading {
+    margin: 0;
+    padding: 10px 0;
+}
+.accordian p {
+    padding: 10px 0 20px 0;
+}
+.plus_icon {
+    width: 20px;
+    height: 20px;
+    background-size: 100%;
+    margin-right: 20px;
+    background-position: center;
+}
+.services_heading span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.services_heading span:last-child {
+    width: calc(100% - 42px);
+}
+
+/* ********** Responsive ********** */
+
+@media screen and (max-width: 1200px) {
+    .left_user_profile img {
+        width: 60px;
+        height: 60px;
+    }
+    .left_user_profile:before {
+        right: 0px;
+    }
+    .right_user_profile h3 {
+        font-size: 30px;
+    }
+    .right_user_profile p {
+        font-size: 19px;
+    }
+    .right_listings {
+        padding-left: 40px;
+    }
+    .services_heading {
+        font-size: 22px;
+    }
+    .description_section p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .servicedetails_page {
+        padding: 0 30px 40px 30px;
+    }
+    .left_listing_img {
+        width: 250px;
+    }
+    .right_listings {
+        width: calc(100% - 250px);
+    }
+    .right_user_profile h3 {
+        font-size: 25px;
+    }
+    .right_user_profile p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .servicedetails_page {
+        padding: 0 20px 30px 20px;
+    }
+    .left_listing_img {
+        width: 170px;
+    }
+    .right_listings {
+        width: calc(100% - 170px);
+        padding-left: 25px;
+    }
+    .services_heading {
+        font-size: 20px;
+    }
+    .left_user_profile img {
+        width: 50px;
+        height: 50px;
+        padding: 3px;
+    }
+    .left_user_profile:before {
+        right: -1px;
+        top: 5px;
+    }
+    .right_user_profile {
+        width: calc(100% - 52px);
+    }
+    .right_user_profile h3 {
+        font-size: 20px;
+    }
+    .right_user_profile p {
+        font-size: 14px;
+    }
+    .vedio_steps li i {
+        width: 25px;
+        height: 25px;
+        line-height: 21px;
+        font-size: 12px;
+        margin-right: 7px;
+    }
+    .vedio_steps li span {
+        width: calc(100% - 33px);
+        padding: 3px 0 0 0;
+        font-size: 13px;
+    }
+    .vedio_steps li {
+        margin-bottom: 9px;
+    }
+    .description_section p {
+        font-size: 14px;
+    }
+    .servicesdetails_section {
+        padding: 20px 0 10px 0;
+    }
+    .plus_icon {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+    .services_heading span:last-child {
+        width: calc(100% - 30px);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .servicedetails_page {
+        padding: 0 20px 20px 20px;
+    }
+    .left_listing_img {
+        width: 100%;
+    }
+    .right_listings {
+        padding-left: 0;
+        padding-top: 20px;
+        width: 100%;
+    }
+}

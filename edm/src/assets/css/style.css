@@ -361,6 +361,14 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
     position: relative;
     margin-bottom: 50px;
 }
+.simple_heading {
+    background: #ffffff;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
 .global_heading:before {
     content: "";
     width: 170px;
@@ -389,6 +397,9 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
 /* background Images */
 .user_icon {
     background: url(../images/user_name.svg) no-repeat;
+}
+.black_user_icon {
+    background: url(../images/black_user_name.svg) no-repeat;
 }
 .password_icon {
     background: url(../images/password.svg) no-repeat;
@@ -420,6 +431,9 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
 .add_to_favourites_icon {
     background: url(../images/blank_red_heart.svg) no-repeat;
 }
+.plus_icon {
+    background: url(../images/plus.svg) no-repeat;
+}
 .edm_body {
     padding-top: 116px;
 }
@@ -430,6 +444,9 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
     .global_heading {
         font-size: 27px;
         margin-bottom: 40px;
+    }
+    .simple_heading {
+        font-size: 27px;
     }
     .global_heading:before {
         width: 140px;
@@ -466,6 +483,9 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
         font-size: 20px;
         margin-bottom: 20px;
     }
+    .simple_heading {
+        font-size: 20px;
+    }
     .global_heading:before {
         width: 120px;
     }
@@ -480,8 +500,12 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
 @media screen and (max-width: 550px) {
     .global_sections {
         margin-bottom: 30px;
+        padding: 15px 20px;
     }
     .global_slider {
         padding: 0 20px;
+    }
+    .simple_heading {
+        padding: 10px 20px;
     }
 }
