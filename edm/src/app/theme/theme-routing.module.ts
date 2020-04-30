@@ -46,6 +46,10 @@ const routes: Routes = [
             {
                 path: "service/details",
                 loadChildren: "../service/service.module#ServiceModule"
+            },
+            {
+                path: "profile",
+                loadChildren: "../profiles/profile.module#ProfileModule"
             }
         ],
     }

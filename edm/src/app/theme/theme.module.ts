@@ -15,6 +15,7 @@ import { ErrorsModule } from '../errors/errors.module';
 import { WidgetsModule } from '../widgets/widget.module';
 import { CommonModule } from '@angular/common';
 import { ServiceModule } from '../service/service.module';
+import { ProfileModule } from '../profiles/profile.module';
 @NgModule({
     declarations: [
         ThemeComponent,
@@ -33,6 +34,7 @@ import { ServiceModule } from '../service/service.module';
         ProductModule,
         ErrorsModule,
         ServiceModule,
+        ProfileModule,
         ThemeRoutingModule,
     ],
     providers: []
