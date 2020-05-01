@@ -232,6 +232,16 @@ label.checkbox, label.radio {
     background: #dedddd;
     border: 1px solid #dedddd;
 }
+.dark_grey_btn {
+    background: #374047;
+    color: #ffffff !important;
+    border: 1px solid #374047;
+}
+.dark_grey_btn:hover {
+    background: #525F69;
+    color: #ffffff !important;
+    border: 1px solid #525F69;
+}
 .secondary_btn {
     background: #ffffff;
     color: #6A6A72 !important;
@@ -245,6 +255,13 @@ label.checkbox, label.radio {
 .button_group {
     width: 100%;
     display: inline-block;
+}
+.mini_btn {
+    padding: 4px 10px;
+    font-size: 11px;
+}
+.mini_btn .btn_icon {
+    height: 15px !important;
 }
 /* form fields */
 .form_group input, .form_group textarea, .form_group select {
@@ -436,6 +453,24 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
 }
 .edm_body {
     padding-top: 116px;
+}
+.bordered_facebook_icon {
+    background: url(../images/bordered_facebook.svg) no-repeat;
+}
+.bordered_instagram_icon {
+    background: url(../images/bordered_instagram.svg) no-repeat;
+}
+.bordered_twitter_icon {
+    background: url(../images/bordered_twitter.svg) no-repeat;
+}
+.bordered_youtube_icon {
+    background: url(../images/bordered_youtube.svg) no-repeat;
+}
+.bordered_soundcloud_icon {
+    background: url(../images/bordered_soundcloud.svg) no-repeat;
+}
+.profile_bg {
+    background: url(../images/profile_bg.jpg) no-repeat;
 }
 
 /* ********** Responsive ********** */
