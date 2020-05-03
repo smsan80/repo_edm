@@ -16,14 +16,16 @@ import { WidgetsModule } from '../widgets/widget.module';
 import { CommonModule } from '@angular/common';
 import { ServiceModule } from '../service/service.module';
 import { ProfileModule } from '../profiles/profile.module';
+import { ClientModule } from './client/client.module';
+import { AdminModule } from './admin/admin.module';
 @NgModule({
     declarations: [
-        ThemeComponent,
-        BodyComponent,
-        HeaderComponent,
-        FooterComponent,
+        // ThemeComponent,
+        // BodyComponent,
+        // HeaderComponent,
+        // FooterComponent,
     ],
-    imports: [        
+    imports: [
         RouterModule,
         CommonModule,
         HomeModule,
@@ -35,6 +37,8 @@ import { ProfileModule } from '../profiles/profile.module';
         ErrorsModule,
         ServiceModule,
         ProfileModule,
+        ClientModule,
+        AdminModule,
         ThemeRoutingModule,
     ],
     providers: []

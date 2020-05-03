@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ThemeComponent } from './theme.component';
+import { BodyComponent } from './client/body/body.component';
+import { AdminBodyComponent } from './admin/body/body.component';
 
 const routes: Routes = [
     {
         path: "",
-        component: ThemeComponent,
+        component: BodyComponent,
         children: [
             {
                 path: "home",
@@ -50,6 +51,24 @@ const routes: Routes = [
             {
                 path: "profile",
                 loadChildren: "../profiles/profile.module#ProfileModule"
+            }
+        ],
+    },
+    {
+        path: "admin",
+        component: AdminBodyComponent,
+        children: [
+            {
+                path: "dashboard",
+                loadChildren: "../admin/dashboard/dashboard.module#DashboardModule"
+            },
+            {
+                path: "gener/list",
+                loadChildren: "../admin/geners/geners.module#GenersModule"
+            },
+            {
+                path: "gener/addmodify",
+                loadChildren: "../admin/geners/geners.module#GenersModule"
             }
         ],
     }
