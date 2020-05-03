@@ -472,6 +472,10 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
 .profile_bg {
     background: url(../images/profile_bg.jpg) no-repeat;
 }
+appadmin-dashboard {
+    margin-top: 56px !important;
+    float: left;
+}
 
 /* ********** Responsive ********** */
 
