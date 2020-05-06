@@ -472,10 +472,34 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
 .profile_bg {
     background: url(../images/profile_bg.jpg) no-repeat;
 }
-appadmin-dashboard {
-    margin-top: 56px !important;
-    float: left;
+.menu_home > p:before {
+    background: url(../images/home.svg) no-repeat;
 }
+.menu_alltracks > p:before {
+    background: url(../images/all_track.svg) no-repeat;
+}
+.menu_allbeats > p:before {
+    background: url() no-repeat;
+}
+.menu_services > p:before {
+    background: url(../images/services.svg) no-repeat;
+}
+.menu_earning_analytics > p:before {
+    background: url(../images/earning_analytics.svg) no-repeat;
+}
+.menu_support > p:before {
+    background: url(../images/support.svg) no-repeat;
+}
+.menu_settings > p:before {
+    background: url(../images/settings.svg) no-repeat;
+}
+
+/* TEMP CSS */
+appadmin-dashboard {
+    margin: 56px 0 0 50px !important;
+    display: block;
+}
+/* TEMP CSS */
 
 /* ********** Responsive ********** */
 

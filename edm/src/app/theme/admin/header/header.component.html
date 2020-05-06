@@ -1,55 +1,89 @@
-<div class="admin_menu">
-    <p class="project_logo">
-        <img src="../../../../assets/images/logo.PNG" />
-    </p>
-    <div class="menu_listing">
-        <div class="menu_list active_menu_list menu_home">
-            <p>Home</p>
+<!-- Use this class for mini menu view class name = "admin_mini_menu" -->
+<div class="admin_base">
+    <div class="admin_menu">
+        <p class="project_logo">
+            <img src="../../../../assets/images/logo.PNG" />
+        </p>
+        <div class="menu_listing">
+            <div class="menu_list active_menu_list menu_home">
+                <p><span>Home</span></p>
+            </div>
+            <div class="menu_list menu_alltracks">
+                <p><span>All Tracks</span></p>
+            </div>
+            <div class="menu_list menu_allbeats">
+                <p><span>All Beats</span></p>
+            </div>
+            <div class="menu_list menu_services">
+                <p><span>Services</span></p>
+            </div>
+            <div class="menu_list menu_earning_analytics">
+                <p><span>Earning / Analytics</span></p>
+            </div>
+            <div class="menu_list menu_support">
+                <p><span>Email notification</span></p>
+            </div>
+            <div class="menu_list menu_settings">
+                <p><span>Settings</span></p>
+            </div>
         </div>
-        <div class="menu_list menu_home">
-            <p>Home</p>
+    </div>
+    
+    <div class="admin_header">
+        <div class="menu_navigation">
+            <img src="../../../../assets/images/navigation.svg">
         </div>
-        <div class="menu_list menu_home">
-            <p>Home</p>
+        <div class="search_section desktop_search">
+            <img src="../../../../assets/images/search.svg" />
+            <input type="search" name="search" placeholder="Search Transactions, Invoices or help" />
         </div>
-        <div class="menu_list menu_home">
-            <p>Home</p>
+        <div class="profile_section">
+            <p class="profile_list mobile_search">
+                <img src="../../../../assets/images/search.svg" title="Search" alt="Search" />
+            </p>
+            <p class="profile_list">
+                <img src="../../../../assets/images/support_grey.svg" title="Support" alt="Support" />
+            </p>
+            <p class="profile_list">
+                <img src="../../../../assets/images/chat.svg" title="Chat" alt="Chat" />
+            </p>
+            <p class="profile_list">
+                <img src="../../../../assets/images/notification.svg" title="Notification" alt="Notification" />
+            </p>
+            <p class="user_name">
+                Pallavi Chapla
+            </p>
+            <div class="user_profile_img">
+                <img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg" />
+            </div>
         </div>
-        <div class="menu_list menu_home">
-            <p>Home</p>
-        </div>
-        <div class="menu_list menu_home">
-            <p>Home</p>
-        </div>
-        <div class="menu_list menu_home">
-            <p>Home</p>
+    </div>
+    <div class="mobile_search_section">
+        <div class="search_section">
+            <img src="../../../../assets/images/back.svg" />
+            <input type="search" name="search" placeholder="Search Transactions, Invoices or help" />
         </div>
     </div>
 </div>
 
-<div class="admin_header">
-    <div class="menu_navigation">
-        <img src="../../../../assets/images/navigation.svg">
-    </div>
-    <div class="search_section">
-        <img src="../../../../assets/images/search.svg" />
-        <input type="search" name="search" placeholder="Search Transactions, Invoices or help" />
-    </div>
-    <div class="profile_section">
-        <p class="profile_list">
-            <img src="../../../../assets/images/support_grey.svg" title="Support" alt="Support" />
-        </p>
-        <p class="profile_list">
-            <img src="../../../../assets/images/chat.svg" title="Chat" alt="Chat" />
-        </p>
-        <p class="profile_list">
-            <img src="../../../../assets/images/notification.svg" title="Notification" alt="Notification" />
-        </p>
-        <p class="user_name">
-            Pallavi Chapla
-        </p>
-        <div class="user_profile_img">
-            <img src="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/user/12.jpg" />
-        </div>
-    </div>
-</div>
+<!--
+
+$(".menu_navigation").click(function(){
+    $(".admin_base").toggleClass("admin_mini_menu");
+});
+
+$(".mobile_search").click(function(){
+    $(".mobile_search_section").show();
+});
+
+$(".search_section > img").click(function(){
+    $(".mobile_search_section").hide();
+});
+
+if (window.matchMedia("(max-width: 850px)").matches) {
+    $(".admin_base").addClass("admin_mini_menu");
+} else {
+    $(".admin_base").removeClass("admin_mini_menu");
+}
+
+-->
