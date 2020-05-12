@@ -472,25 +472,25 @@ select::-ms-expand, input::-ms-clear, input::-ms-reveal {
 .profile_bg {
     background: url(../images/profile_bg.jpg) no-repeat;
 }
-.menu_home > p:before {
+.menu_home > a:before {
     background: url(../images/home.svg) no-repeat;
 }
-.menu_alltracks > p:before {
+.menu_alltracks > a:before {
     background: url(../images/all_track.svg) no-repeat;
 }
-.menu_allbeats > p:before {
+.menu_allbeats > a:before {
     background: url() no-repeat;
 }
-.menu_services > p:before {
+.menu_services > a:before {
     background: url(../images/services.svg) no-repeat;
 }
-.menu_earning_analytics > p:before {
+.menu_earning_analytics > a:before {
     background: url(../images/earning_analytics.svg) no-repeat;
 }
-.menu_support > p:before {
+.menu_support > a:before {
     background: url(../images/support.svg) no-repeat;
 }
-.menu_settings > p:before {
+.menu_settings > a:before {
     background: url(../images/settings.svg) no-repeat;
 }
 
