@@ -13,7 +13,7 @@ import { GenerListComponent } from './generlist/generlist.component';
         CommonModule,
         RouterModule.forChild([
             {
-                path: 'list',
+                path: '',
                 component: GenerListComponent
             },
             {

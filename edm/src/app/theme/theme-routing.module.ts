@@ -59,17 +59,13 @@ const routes: Routes = [
         component: AdminBodyComponent,
         children: [
             {
-                path: "dashboard",
+                path: "",
                 loadChildren: "../admin/dashboard/dashboard.module#DashboardModule"
             },
             {
-                path: "gener/list",
+                path: "gener",
                 loadChildren: "../admin/geners/geners.module#GenersModule"
             },
-            {
-                path: "gener/addmodify",
-                loadChildren: "../admin/geners/geners.module#GenersModule"
-            }
         ],
     }
 ];
