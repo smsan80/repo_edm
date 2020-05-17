@@ -7,8 +7,10 @@ import { AdminHeaderComponent } from './header/header.component';
 import { AdminFooterComponent } from './footer/footer.component';
 import { DashboardModule } from 'src/app/admin/dashboard/dashboard.module';
 import { GenersModule } from 'src/app/admin/geners/geners.module';
+import { AdminComponent } from './admin.component';
 @NgModule({
     declarations: [
+        AdminComponent,
         AdminBodyComponent,
         AdminHeaderComponent,
         AdminFooterComponent,

@@ -5,8 +5,10 @@ import { CommonModule } from '@angular/common';
 import { BodyComponent } from './body/body.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { ClientComponent } from './client.component';
 @NgModule({
     declarations: [
+        ClientComponent,
         BodyComponent,
         HeaderComponent,
         FooterComponent,

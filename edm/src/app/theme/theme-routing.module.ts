@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { BodyComponent } from './client/body/body.component';
 import { AdminBodyComponent } from './admin/body/body.component';
+import { ClientComponent } from './client/client.component';
+import { AdminComponent } from './admin/admin.component';
 
 const routes: Routes = [
     {
         path: "",
-        component: BodyComponent,
+        component: ClientComponent,
         children: [
             {
                 path: "home",
@@ -56,7 +58,7 @@ const routes: Routes = [
     },
     {
         path: "admin",
-        component: AdminBodyComponent,
+        component: AdminComponent,
         children: [
             {
                 path: "",
