@@ -15,10 +15,8 @@ $(document).ready(function () {
     if (window.matchMedia("(max-width: 850px)").matches) {
         $(".admin_base").addClass("admin_mini_menu");
     } else {
-        $(".admin_base").removeClass("admin_mini_menu");
+        $("admin_base").removeClass("admin_mini_menu");
     }
-});
-$(document).ready(function () {
     $(".open_mobile_menu").click(function () {
         $(".mobile_menu").show();
     });
